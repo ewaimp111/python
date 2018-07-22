@@ -1,0 +1,51 @@
+
+def info(name,age,**other):
+    print('name:'+name)
+    print('age:'+str(age))
+    print('other:'+str(other))
+
+o ={'addr':'星湖路','city':'beijing'}
+i=info('刘洋',22,**o)
+
+
+def info1(name,*other):
+    print(name)
+    print(other)
+    return other
+n=[2,4,6]
+y=[1,25,5]
+x=('a','b')
+f=info1('abc',n,y,x)
+print(f[1])
+#----------------------------------------
+
+l =['a','b','c','d','e']
+
+r =[]
+i=3
+for i in range(i) :
+    r.append(l[i])
+    print(str(i))
+print(r)
+print(l[:3])
+
+num = list(range(99))
+
+for i in num:
+    if i % 25==0:
+        print(str(i))
+
+
+d = {'job':'coder','language':'python'}
+
+for n,j in d.items():
+    print(n,j)
+
+s = 'i love you python'
+
+for i,v in enumerate(s):
+    print(i,v)
+
+x=[m + n+ p for m in '0123456789' for n in '0123456789' for p in '0123456789']
+print(x[1:5])
+
